@@ -113,10 +113,8 @@ $sendLocationButton.addEventListener('click', () => {
 })
 
 
-// adding typing feature
-// $messageFormInput.setAttribute('placeholder', 'Typing...')
-$messageFormInput.addEventListener('input', () => {
-
+// adding 'Typing Feature'
+const sendTypingResponse = () => {
     let typedText = $messageFormInput.value
     if (typedText.length) {
         console.log(typedText)
@@ -124,6 +122,16 @@ $messageFormInput.addEventListener('input', () => {
     }
     console.log('empty text')
     socket.emit('typing-sent', false)
+}
+
+$messageFormInput.addEventListener('input', () => {
+
+    sendTypingResponse()
+})
+
+$messageForm.addEventListener('submit', (e) => {
+
+    setTimeout(() => sendTypingResponse(), 100)
 })
 
 socket.on('typing-recieved', (isUserTyping, username) => {
