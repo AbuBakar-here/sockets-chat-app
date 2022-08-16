@@ -9,7 +9,6 @@ Simple chat app created with Node.js, Socket.io and Express.
 * [Demo](#demo)
 * [Fixes](#fixes)
 * [License](#license)
-* [Setup](#setup)
 
 ## Technologies
 
