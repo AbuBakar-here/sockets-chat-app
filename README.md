@@ -45,8 +45,7 @@ npm run dev
 
 ## Demo
 
-[**Sockets Chat App**](
-https://abubakar-sockets-chat-app.herokuapp.com/), this will take you to a heroku app where this app is hosted.
+[**Sockets Chat App**](https://sockets-chat-app.abubakarhere.repl.co/), this will take you to a replit app where this app is hosted.
 
 ## Fixes
 
